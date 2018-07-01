@@ -28,7 +28,6 @@ password = input("Password: ")
 
 conn = sqlite3.connect(filename)
 c = conn.cursor()
-tables = ['Account', 'Address', 'Key']
 
 c.execute("SELECT name, value from Key")
 for tup in c.fetchall():
